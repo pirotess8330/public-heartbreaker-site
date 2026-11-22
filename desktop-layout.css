@@ -1,0 +1,109 @@
+@media (min-width: 761px) {
+  :root,
+  .community-brand,
+  .home-brand,
+  .home-header-brand,
+  .home-header-brand .home-brand {
+    --pink: #ff00c8;
+  }
+
+  .utility {
+    background: #bc008d;
+    color: #fff;
+  }
+
+  .home-header-brand .utility {
+    background: #0c080e;
+    color: var(--pink);
+  }
+
+  .home-brand .hero-home h1 em {
+    color: var(--pink);
+  }
+
+  .home-brand .hero-home.hero-with-photo {
+    min-height: clamp(25rem, 60vh, 42rem);
+  }
+
+  .home-brand .hero-home .hero-copy {
+    justify-self: start;
+    width: min(52%, 58rem);
+    max-width: none;
+    margin-inline-start: clamp(2rem, 8vw, 10rem);
+    padding: clamp(2rem, 6vh, 5rem) 1rem;
+    text-align: center;
+  }
+
+  .home-brand .hero-home .hero-copy > p {
+    margin-inline: auto;
+  }
+
+  .home-brand .hero-home .actions {
+    justify-content: center;
+  }
+
+  .home-brand .hero-home .hero-photo {
+    left: 32%;
+  }
+
+  .home-brand .hero-home .hero-photo img {
+    object-fit: contain;
+  }
+
+  .home-brand .hero-home .hero-photo::after {
+    content: "";
+    background: linear-gradient(90deg, #000, transparent 36%);
+  }
+
+  .piercing-hero.hero-with-photo {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 35%);
+  }
+
+  .piercing-hero .hero-copy {
+    padding-inline-end: 1rem;
+  }
+
+  .piercing-hero h1 {
+    font-size: clamp(2.75rem, 5.45vw, 6.25rem);
+    overflow-wrap: anywhere;
+  }
+
+  .piercing-hero .hero-photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tapout-details.content-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .8fr);
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 5rem);
+  }
+
+  .tapout-details .gallery {
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 27rem);
+    margin: 0 auto;
+  }
+
+  .tapout-details .gallery img {
+    aspect-ratio: 1;
+  }
+
+  .artist-profile.content-section {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr);
+    align-items: start;
+    gap: clamp(1.25rem, 3vw, 3rem);
+  }
+
+  .artist-profile .artist-profile-intro {
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .artist-profile .artist-portfolio .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+  }
+}
